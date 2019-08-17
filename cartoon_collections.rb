@@ -19,7 +19,7 @@ def find_the_cheese(foods)
   i = 0
   while i < foods.length 
     if cheese_types.include?(foods[i])
-      foods.find(foods[i])
+      foods.find{|food|}
     end 
     i += 1
   end
