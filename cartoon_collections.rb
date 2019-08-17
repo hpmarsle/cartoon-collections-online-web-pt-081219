@@ -22,6 +22,8 @@ def find_the_cheese(foods)
     if cheese_types.include?(foods[i])
       found_cheese = foods[i]
       break
+    else
+      found_cheese = nil
     end 
     i += 1
   end
