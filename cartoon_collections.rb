@@ -20,7 +20,8 @@ def find_the_cheese(foods)
   found_cheese = ''
   while i < foods.length 
     if cheese_types.include?(foods[i])
-      foods.find{|food|}
+      found_cheese = ''
+      break
     end 
     i += 1
   end
