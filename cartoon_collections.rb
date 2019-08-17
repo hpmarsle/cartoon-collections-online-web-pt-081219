@@ -20,11 +20,12 @@ def find_the_cheese(foods)
   found_cheese = ''
   while i < foods.length 
     if cheese_types.include?(foods[i])
-      found_cheese = ''
+      found_cheese = foods[i]
       break
     end 
     i += 1
   end
+  found_cheese
 #.find 
   
 end
